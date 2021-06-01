@@ -1,4 +1,3 @@
-import unittest
 from fizzbuzz import fizzbuzz
 
 def test_number(capsys):
