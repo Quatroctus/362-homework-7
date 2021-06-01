@@ -29,3 +29,13 @@ def test_buzz(capsys):
     assert output_lines[4] == "Buzz"
     assert output_lines[9] == "Buzz"
     assert output_lines[19] == "Buzz"
+
+
+def test_fizzbuzz(capsys):
+    fizzbuzz()
+
+    output_lines = capsys.readouterr().out.split()[:-1]
+
+    assert output_lines[14] == "Fizzbuzz"
+    assert output_lines[29] == "Fizzbuzz"
+    assert output_lines[44] == "Fizzbuzz"
