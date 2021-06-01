@@ -12,3 +12,8 @@ def test_leapyear100fail():
     assert leapyear(1800) == False
     assert leapyear(1700) == False
 
+
+def test_leapyear400succeed():
+    assert leapyear(2000) == True
+    assert leapyear(1600) == True
+    assert leapyear(1200) == True
